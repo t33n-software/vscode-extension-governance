@@ -1,0 +1,45 @@
+# ╭───═══◎◎◎═══───
+# 📦 **Packaging ignore — core fragment (universal)**
+# Excluded for every extension of every ecosystem: editor and operating-system state, repository documentation beyond the marketplace pair, governance surfaces, and packaging residue. The whole file is the governed region; composition is pinned by the canonical verifier through byte identity.
+# ╰───═══◎◎◎═══───
+#
+# .vscode/** — workspace editor state; local machine material, never runtime content.
+.vscode/**
+# .idea/** — JetBrains project state; personal editor data.
+.idea/**
+# .DS_Store — Finder metadata; operating-system droppings.
+.DS_Store
+# *.log — local log residue; never meaningful on a user machine.
+*.log
+# tmp/** — scratch trees; regenerable, meaningless in a package.
+tmp/**
+# .cache/** — tool cache trees; local-only state.
+.cache/**
+# docs/** — repository documentation; the marketplace renders README and CHANGELOG only.
+docs/**
+# CONTRIBUTING.md — contributor guidance; repository material, not runtime content.
+CONTRIBUTING.md
+# .github/** — platform automation; runs before packaging exists.
+.github/**
+# repo-bindings.json — the governance declaration; consumed by the verifier, never at runtime.
+repo-bindings.json
+# git-governance.quality.json — the configuration seam; governance-time input only.
+git-governance.quality.json
+# license.values.json — the license render input; governance-time input only.
+license.values.json
+# license.lock.json — the license render pin; governance-time input only.
+license.lock.json
+# lefthook.yml — the local hook contract; development-environment surface.
+lefthook.yml
+# .vscodeignore — the packaging contract itself; inert inside the package.
+.vscodeignore
+# .gitignore — the version-control contract; inert inside the package.
+.gitignore
+# .gitattributes — the attribute contract; inert inside the package.
+.gitattributes
+# dist/vsix/** — the vsix staging tree; a package must never contain a package.
+dist/vsix/**
+# *.vsix — built packages; distribution residue inside the repository.
+*.vsix
+# **/*.map — source maps; they disclose original paths, names, and source text (source-map rule).
+**/*.map

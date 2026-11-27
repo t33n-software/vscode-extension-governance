@@ -1,0 +1,9 @@
+# ╭───═══◎◎◎═══───
+# 🧹 **Packaging ignore — eslint fragment (linter: eslint)**
+# Only when eslint is the linter. The lint contracts are lint-time input.
+# ╰───═══◎◎◎═══───
+#
+# eslint.config.* — the flat-config contract (any config extension); lint-time input.
+eslint.config.*
+# .eslintrc* — the legacy rc family; lint-time input.
+.eslintrc*

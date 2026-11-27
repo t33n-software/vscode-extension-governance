@@ -1,0 +1,13 @@
+# ╭───═══◎◎◎═══───
+# 🧺 **Packaging ignore — yarn fragment (declared package manager: yarn)**
+# Only when package.json#packageManager declares yarn. The lockfile, the berry configuration, and the install policy are development-environment surfaces.
+# ╰───═══◎◎◎═══───
+#
+# yarn.lock — the dependency resolution lock; install-time contract.
+yarn.lock
+# .yarnrc.yml — the berry configuration; development-environment surface.
+.yarnrc.yml
+# .npmrc — the registry policy; development-environment surface.
+.npmrc
+# .node-version — the runtime pin; the CI lane resolves the toolchain from the configuration seam.
+.node-version

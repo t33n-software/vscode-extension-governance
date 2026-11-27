@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "areas": {
+    "core": {
+      "title": "Universal packaging surfaces",
+      "concerns": []
+    },
+    "node": {
+      "title": "Node ecosystem surfaces",
+      "concerns": ["core"]
+    },
+    "package-manager": {
+      "title": "Package manager contracts",
+      "concerns": ["pnpm", "npm", "yarn"]
+    },
+    "bundler": {
+      "title": "Bundler contracts",
+      "concerns": ["rolldown", "esbuild", "tsdown", "webpack"]
+    },
+    "testing": {
+      "title": "Test runner contracts",
+      "concerns": ["vitest", "jest"]
+    },
+    "linting": {
+      "title": "Linter contracts",
+      "concerns": ["eslint", "biome"]
+    }
+  }
+}

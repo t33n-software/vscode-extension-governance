@@ -1,0 +1,9 @@
+# ╭───═══◎◎◎═══───
+# 🧹 **Packaging ignore — biome fragment (linter: biome)**
+# Only when biome is the linter. The lint and format contract is lint-time input.
+# ╰───═══◎◎◎═══───
+#
+# biome.json — the lint and format contract; lint-time input.
+biome.json
+# biome.jsonc — the lint and format contract (JSONC form); lint-time input.
+biome.jsonc

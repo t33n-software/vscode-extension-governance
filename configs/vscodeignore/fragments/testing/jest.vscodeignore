@@ -1,0 +1,7 @@
+# ╭───═══◎◎◎═══───
+# 🧪 **Packaging ignore — jest fragment (test runner: jest)**
+# Only when jest is the test runner. The runner contract is test-time input.
+# ╰───═══◎◎◎═══───
+#
+# jest.config.* — the runner contract (any config extension); test-time input.
+jest.config.*

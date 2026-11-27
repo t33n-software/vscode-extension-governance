@@ -1,0 +1,7 @@
+# ╭───═══◎◎◎═══───
+# 🛠️ **Packaging ignore — rolldown fragment (organization default bundler)**
+# Only when rolldown is the bundler. The bundler contract file is build-time input; the shipped artifact is the bundle it produced.
+# ╰───═══◎◎◎═══───
+#
+# rolldown.config.* — the bundler contract (any config extension); build-time input.
+rolldown.config.*
