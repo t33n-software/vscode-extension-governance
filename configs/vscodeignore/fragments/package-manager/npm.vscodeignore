@@ -1,0 +1,11 @@
+# ╭───═══◎◎◎═══───
+# 🧺 **Packaging ignore — npm fragment (declared package manager: npm)**
+# Only when package.json#packageManager declares npm. The lockfile and the install policy are development-environment surfaces.
+# ╰───═══◎◎◎═══───
+#
+# package-lock.json — the dependency resolution lock; install-time contract.
+package-lock.json
+# .npmrc — the registry policy; development-environment surface.
+.npmrc
+# .node-version — the runtime pin; the CI lane resolves the toolchain from the configuration seam.
+.node-version

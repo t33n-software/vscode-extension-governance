@@ -1,0 +1,7 @@
+# ╭───═══◎◎◎═══───
+# 🛠️ **Packaging ignore — webpack fragment (bundler: webpack)**
+# Only when webpack is the bundler. The bundler contract file is build-time input.
+# ╰───═══◎◎◎═══───
+#
+# webpack.config.* — the bundler contract (any config extension); build-time input.
+webpack.config.*

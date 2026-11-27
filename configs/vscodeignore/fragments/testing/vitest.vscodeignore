@@ -1,0 +1,7 @@
+# ╭───═══◎◎◎═══───
+# 🧪 **Packaging ignore — vitest fragment (test runner: vitest)**
+# Only when vitest is the test runner. The runner contract is test-time input; a jest tenant must not carry this exclusion.
+# ╰───═══◎◎◎═══───
+#
+# vitest.config.* — the runner contract (any config extension); test-time input.
+vitest.config.*

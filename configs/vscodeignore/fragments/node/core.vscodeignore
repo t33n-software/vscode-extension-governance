@@ -1,0 +1,33 @@
+# ╭───═══◎◎◎═══───
+# 🌿 **Packaging ignore — node fragment (the Node ecosystem)**
+# Excluded for every Node-based extension: the dependency tree, the source, the test and tooling surfaces, and the TypeScript contracts. JavaScript is never excluded by extension — the shipped bundle itself is JavaScript — only by path or name pattern.
+# ╰───═══◎◎◎═══───
+#
+# node_modules/** — the installed dependency tree; the bundle is self-contained (no-dependencies law).
+node_modules/**
+# src/** — the source tree; build input, never runtime content.
+src/**
+# **/*.ts — stray TypeScript outside src (root gulpfile.ts, fixtures); build input.
+**/*.ts
+# **/*.tsx — the same class for JSX sources.
+**/*.tsx
+# **/*.test.* — test files of any format; development instruments (extension is not the class).
+**/*.test.*
+# **/*.spec.* — spec files of any format; development instruments.
+**/*.spec.*
+# test/** — test trees and fixtures of any format.
+test/**
+# coverage/** — coverage output; measurement residue.
+coverage/**
+# out/** — the legacy bundle target directory; organization bundles ship dist/.
+out/**
+# .vscode-test/** — the downloaded VS Code test runtime; a large binary tree, never a runtime input.
+.vscode-test/**
+# tsconfig*.json — the compiler contract; build-time input.
+tsconfig*.json
+# scripts/** — build and tooling scripts of any language (the typed lane ships .ts, native consumers .mjs — the path class covers both without naming either).
+scripts/**
+# tools/** — repository-local tooling surfaces.
+tools/**
+# tooling/** — repository-local tooling surfaces (variant spelling).
+tooling/**

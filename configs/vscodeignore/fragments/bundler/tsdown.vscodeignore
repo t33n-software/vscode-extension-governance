@@ -1,0 +1,7 @@
+# ╭───═══◎◎◎═══───
+# 🛠️ **Packaging ignore — tsdown fragment (bundler: tsdown)**
+# Only when tsdown is the bundler. The bundler contract file is build-time input.
+# ╰───═══◎◎◎═══───
+#
+# tsdown.config.* — the bundler contract (any config extension); build-time input.
+tsdown.config.*

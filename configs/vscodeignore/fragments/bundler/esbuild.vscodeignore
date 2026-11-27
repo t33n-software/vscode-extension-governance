@@ -1,0 +1,9 @@
+# ╭───═══◎◎◎═══───
+# 🛠️ **Packaging ignore — esbuild fragment (legacy and consumer-chosen bundler)**
+# Only when esbuild is the bundler. The build-script contract is build-time input. Kept as a capability row: an organization default change never deletes another capability's row.
+# ╰───═══◎◎◎═══───
+#
+# esbuild.js — the bundler contract (classic form); build-time input.
+esbuild.js
+# esbuild.mjs — the bundler contract (ESM form); build-time input.
+esbuild.mjs

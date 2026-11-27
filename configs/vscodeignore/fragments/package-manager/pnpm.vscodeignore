@@ -1,0 +1,13 @@
+# ╭───═══◎◎◎═══───
+# 🧺 **Packaging ignore — pnpm fragment (declared package manager: pnpm)**
+# Only when package.json#packageManager declares pnpm. The workspace control plane and the install policy are development-environment surfaces; the package carries the bundle, not the resolution contracts.
+# ╰───═══◎◎◎═══───
+#
+# pnpm-workspace.yaml — the workspace control plane; install-time contract.
+pnpm-workspace.yaml
+# pnpm-lock.yaml — the dependency resolution lock; install-time contract.
+pnpm-lock.yaml
+# .npmrc — the registry policy; development-environment surface.
+.npmrc
+# .node-version — the runtime pin; the CI lane resolves the toolchain from the configuration seam.
+.node-version
